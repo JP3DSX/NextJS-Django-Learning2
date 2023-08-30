@@ -37,6 +37,6 @@ class TaskRetrieveView(generics.RetrieveAPIView):
     permission_classes = (AllowAny,)
 
 
-class TaskViewSet(viewsets.odelViewSet):
+class TaskViewSet(viewsets.ModelViewSet):
     queryset = Task.objects.all()
     serializer_class = TaskSerializer
